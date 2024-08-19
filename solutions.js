@@ -14,10 +14,14 @@ function factorial(n) {
   if(typeof n!== "number")
     console.log("Los datos de entrada no son adecuados") 
     return;
-  if(n===0)
+  if(n===0){
     return 1;
-  else
-  return n*factorial(n-1);  
+  }
+    
+  else{
+    return n*factorial(n-1);
+  }
+      
 }
 
 // Find the Largest Number
@@ -32,6 +36,7 @@ function findLargest(arr) {
             }
         }
     }
+    return largest;
 }
 
 // Count Vowels in a String
